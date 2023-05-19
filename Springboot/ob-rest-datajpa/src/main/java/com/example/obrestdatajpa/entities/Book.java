@@ -1,4 +1,4 @@
-package com.example.obrestdatajpa;
+package com.example.obrestdatajpa.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,5 +1,7 @@
 package com.example.obrestdatajpa;
 
+import com.example.obrestdatajpa.entities.Book;
+import com.example.obrestdatajpa.repository.BookRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -26,7 +28,7 @@ public class ObRestDatajpaApplication {
 		//recuperar todos los libros
 		System.out.println("Num libros  en base de datos: "+ repository.findAll().size());
 		//borrar un libro
-		repository.deleteById(1L);
+		//repository.deleteById(1L);
 		System.out.println("Num libros  en base de datos: "+ repository.findAll().size());
 	}
 
