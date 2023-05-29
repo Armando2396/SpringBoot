@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "7035709a-0f88-4b0b-bf19-7e2acc0a6e63",
+		"name": "OB Spring REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11452144"
+	},
+	"item": [
+		{
+			"name": "/hola",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hola",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hola"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/books  MOSTRAR TODOS LOS LIBROS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/books/id   BUSCAR UN LIBRO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/books/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/books  CREAR LIBRO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"libro de java\",\r\n    \"author\": \"no se .v\",\r\n    \"pages\": 450,\r\n    \"price\": 29.99,\r\n    \"realeaseDate\": \"2015-02-01\",\r\n    \"online\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/books/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/books  ACTUALIZAR",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"title\": \"Homo Deus  actualizando desde postman\",\r\n        \"author\": \"Yuval Noah\",\r\n        \"pages\": 450,\r\n        \"price\": 29.99,\r\n        \"realeaseDate\": \"2018-12-01\",\r\n        \"online\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/books/1  BORRAR UNO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/books/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/books   BORRAR TODO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
